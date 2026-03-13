@@ -1,75 +1,66 @@
+/* Configurações gerais da página */
 body {
-
   font-family: Arial;
-  background-color: #f4f4f4;
-
+  background-image: radial-gradient(circle, #1188ba, #0c6d9f, #095384, #073a68, #03234d);
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 100vh;
-
 }
 
+/* Container principal */
 .container {
-
-  background: white;
+  background: rgb(185, 213, 228);
   padding: 20px;
   border-radius: 10px;
-
   width: 300px;
-
 }
 
+/* Título centralizado */
 h1 {
-
   text-align: center;
-
 }
 
+/* Área de input com botão */
 .input-area {
-
   display: flex;
   gap: 10px;
-
 }
 
 input {
-
   flex: 1;
   padding: 8px;
-
 }
 
 button {
-
   padding: 8px;
   cursor: pointer;
-
 }
 
+/* Lista de tarefas */
 ul {
-
   margin-top: 20px;
   padding: 0;
-
 }
 
 li {
-
   list-style: none;
-  background: #eee;
+  background: #ffffff;
   margin-bottom: 10px;
-  padding: 8px;
-
+  padding: 8px 12px;
   display: flex;
   justify-content: space-between;
-
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
 }
 
-.concluida {
+li:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
 
+/* Tarefa concluída */
+.concluida {
   text-decoration: line-through;
   color: gray;
-
 }
